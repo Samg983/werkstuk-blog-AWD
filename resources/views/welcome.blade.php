@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Blog Sam Goeman
+                    Blog Sam Goeman gd
                 </div>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
