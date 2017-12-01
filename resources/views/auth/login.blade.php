@@ -60,6 +60,10 @@
                                 </a>
                             </div>
                         </div>
+
+                        <a class="btn btn-primary" href="{{ route('login.github') }}">
+                            Github login
+                        </a>
                     </form>
                 </div>
             </div>

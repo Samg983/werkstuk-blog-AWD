@@ -15,6 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+//Login met github
+Route::get('login/github', [
+    'uses' => 'LoginController@redirectToProvider',
+    'as' => 'login.github'
+]);
+
+Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
