@@ -16,14 +16,13 @@ Route::get('/', function () {
 });
 
 
-
-//Login met github
-Route::get('login/github', [
-    'uses' => 'LoginController@redirectToProvider',
-    'as' => 'login.github'
+Route::resources([
+    'blogposts' => 'BlogPostController'
 ]);
 
-Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback');
+// OAuth Routes
+Route::get('login/github', 'AuthController@redirectToProvider')->name("login.github");
+Route::get('login/github/callback', 'AuthController@handleProviderCallback');
 
 
 Auth::routes();

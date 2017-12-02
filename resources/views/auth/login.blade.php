@@ -61,8 +61,12 @@
                             </div>
                         </div>
 
-                        <a class="btn btn-primary" href="{{ route('login.github') }}">
+                        <a class="btn btn-primary" href="{{ route("login.github") }}">
                             Github login
+                        </a>
+
+                        <a class="btn btn-primary" href="{{ url('/login/facebook') }}">
+                            Facebook login
                         </a>
                     </form>
                 </div>
